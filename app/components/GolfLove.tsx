@@ -148,7 +148,10 @@ export default function GolfLove() {
         
         {/* Top Marquee (Moves Left) */}
         <div className="flex w-full overflow-hidden">
-          <div className="flex w-max animate-marquee-left gap-6 px-3">
+          <div 
+            className="flex w-max gap-6 px-3 hover:[animation-play-state:paused]" 
+            style={{ animation: "marquee-left 40s linear infinite" }}
+          >
             {topMarquee.map((review, idx) => (
               <ReviewCard key={`top-${idx}`} review={review} />
             ))}
@@ -157,7 +160,10 @@ export default function GolfLove() {
 
         {/* Bottom Marquee (Moves Right) */}
         <div className="flex w-full overflow-hidden">
-          <div className="flex w-max animate-marquee-right gap-6 px-3">
+          <div 
+            className="flex w-max gap-6 px-3 hover:[animation-play-state:paused]" 
+            style={{ animation: "marquee-right 40s linear infinite" }}
+          >
             {bottomMarquee.map((review, idx) => (
               <ReviewCard key={`bottom-${idx}`} review={review} />
             ))}
