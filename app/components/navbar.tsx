@@ -51,29 +51,19 @@ export default function Navbar() {
   return (
     <header className="w-full bg-white">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 md:gap-4 md:px-6 md:py-4">
-        <div className="flex min-w-0 flex-1 items-center gap-3 md:gap-4">
+        <div className="">
           <Image
             src="/images/logo.png"
             alt="Jackpot Golf"
-            width={56}
-            height={56}
-            className="h-12 w-12 shrink-0 rounded-xl object-cover md:h-14 md:w-14 md:rounded-xl"
+            width={106}
+            height={106}
+            className="h-24 w-24 shrink-0 rounded-xl object-cover md:h-14 md:w-14 md:rounded-xl"
             priority
           />
-          <div className="flex min-w-0 flex-col gap-1">
-            <Image
-              src="/images/textlogo.svg"
-              alt="Jackpot Golf"
-              width={143}
-              height={22}
-              className="h-[18px] w-auto max-w-[min(100vw-10rem,200px)] md:h-[22px] md:max-w-[min(100%,220px)]"
-              priority
-            />
-            <StarRating />
-          </div>
+      
         </div>
 
-        <div className="flex shrink-0 flex-col items-end gap-2 md:flex-row md:items-center md:gap-3">
+        <div className="flex shrink-0 flex-col items-end gap-2 md:flex-row md:items-center md:gap-3 ">
           <TryFreeButton />
 
           <button

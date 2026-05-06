@@ -1,14 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaCube } from "react-icons/fa"; // Using this as a placeholder for the 3D VR icon
-
+import { IoQrCodeOutline } from "react-icons/io5";
+import { GiGolfFlag } from "react-icons/gi";
+import { GiTrophyCup } from "react-icons/gi";
 export default function Newex() {
   return (
     <section className="relative flex min-h-[100dvh] w-[calc(100%-20px)] mx-[10px] mt-[10px] flex-col items-center justify-start overflow-hidden rounded-[16px] py-12 md:py-20">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/herobg.jpg"
+          src="/images/herobg.png"
           alt="Golf Course Background"
           fill
           className="object-cover object-center"
@@ -30,7 +32,7 @@ export default function Newex() {
         {/* Header Text */}
         <div className="flex flex-col items-center text-center mt-4 sm:mt-8">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-md leading-tight">
-            Experience Golf Like<br />Never Before
+            HOW IT WORKS
           </h2>
         </div>
 
@@ -57,12 +59,31 @@ export default function Newex() {
           <div className="flex items-center gap-4">
             <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-[#1A2D1B] border border-[#2D4C1E] shadow-lg">
               {/* Replace with specific 3D icon if needed, using FaCube for now */}
-              <FaCube className="h-8 w-8 text-white" />
+              <IoQrCodeOutline className="h-8 w-8 text-white" />
             </div>
             <h3 className="text-2xl sm:text-3xl font-extrabold text-white drop-shadow-md uppercase tracking-wide">
-              3D VIRTUAL REALITY
+              SCAN
             </h3>
           </div>
+          <div className="flex items-center gap-4">
+            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-[#1A2D1B] border border-[#2D4C1E] shadow-lg">
+              {/* Replace with specific 3D icon if needed, using FaCube for now */}
+                <GiGolfFlag className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-white drop-shadow-md uppercase tracking-wide">
+                PLAY
+              </h3>
+            </div>
+            <div className="flex items-center gap-4">
+            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-[#1A2D1B] border border-[#2D4C1E] shadow-lg">
+              {/* Replace with specific 3D icon if needed, using FaCube for now */}
+                <GiTrophyCup className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-white drop-shadow-md uppercase tracking-wide">
+                WIN
+              </h3>
+            </div>
+
 
           {/* Description Paragraph */}
           <p className="text-lg sm:text-xl font-medium leading-relaxed text-white drop-shadow-sm">
@@ -72,18 +93,13 @@ export default function Newex() {
           {/* Action Buttons */}
           <div className="mt-4 flex flex-col gap-4">
             <Link
-              href="#try-now"
-              className="flex w-full items-center justify-center rounded-xl bg-white px-8 py-5 text-lg font-extrabold tracking-wide text-[#1A2D1B] shadow-lg transition-transform hover:scale-105 active:scale-95"
+              href="#enter-contest"
+              className="flex w-full items-center justify-center rounded-xl bg-green-500 px-8 py-5 text-lg font-extrabold tracking-wide text-[#ffffff] shadow-lg transition-transform hover:scale-105 active:scale-95"
             >
-              TRY IT NOW
+             ENTER CONTEST
             </Link>
             
-            <Link
-              href="#see-action"
-              className="flex w-full items-center justify-center rounded-xl border-2 border-white bg-transparent px-8 py-5 text-lg font-extrabold tracking-wide text-white shadow-lg transition-transform hover:bg-white/10 active:scale-95"
-            >
-              SEE IT IN ACTION
-            </Link>
+      
           </div>
 
         </div>

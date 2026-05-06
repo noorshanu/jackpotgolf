@@ -10,7 +10,7 @@ export default function Precesion() {
         {/* Header Text */}
         <div className="flex flex-col items-center text-center mt-2">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#1A2026] leading-[1.1]">
-            Play With Precision
+          ACTIVE COURSES
           </h2>
         </div>
 

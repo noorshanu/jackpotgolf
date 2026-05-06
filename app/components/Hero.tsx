@@ -4,49 +4,35 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-const WORDS = ["Confidence", "Precision", "Power", "Focus"];
+const targetValue = 1000000;
 
 export default function Hero() {
-  const [text, setText] = useState("");
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [loopNum, setLoopNum] = useState(0);
-  const [typingSpeed, setTypingSpeed] = useState(150);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
-    const handleType = () => {
-      const i = loopNum % WORDS.length;
-      const fullWord = WORDS[i];
+    let start = 0;
+    const duration = 2000; // 2 seconds
+    const increment = targetValue / (duration / 16); // 60fps
 
-      setText(
-        isDeleting
-          ? fullWord.substring(0, text.length - 1)
-          : fullWord.substring(0, text.length + 1)
-      );
-
-      // Speed up when deleting
-      setTypingSpeed(isDeleting ? 75 : 150);
-
-      if (!isDeleting && text === fullWord) {
-        // Pause at the end of typing before deleting
-        setTimeout(() => setIsDeleting(true), 2000);
-      } else if (isDeleting && text === "") {
-        // Move to next word when fully deleted
-        setIsDeleting(false);
-        setLoopNum((prev) => prev + 1);
-        setTypingSpeed(500); // Pause before typing next word
+    const timer = setInterval(() => {
+      start += increment;
+      if (start >= targetValue) {
+        setCount(targetValue);
+        clearInterval(timer);
+      } else {
+        setCount(Math.floor(start));
       }
-    };
+    }, 16);
 
-    const timer = setTimeout(handleType, typingSpeed);
-    return () => clearTimeout(timer);
-  }, [text, isDeleting, loopNum, typingSpeed]);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <section className="relative flex min-h-[100dvh] w-full flex-col items-center justify-between overflow-hidden py-12 md:py-20">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/herobg.jpg"
+          src="/images/herobg1.png"
           alt="Golf Course Background"
           fill
           priority
@@ -65,13 +51,17 @@ export default function Hero() {
         
         {/* Headlines */}
         <div className="flex flex-col items-center text-center mt-4">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-[0.2em] text-white drop-shadow-md uppercase">
-            PLAY WITH
+          <h2 className="text-lg sm:text-xl md:text-2xl font-bold tracking-[0.3em] text-white drop-shadow-md uppercase">
+            WIN UP TO
           </h2>
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-normal text-white drop-shadow-xl mt-1 min-h-[1.2em] flex items-center justify-center">
-            <span>{text}</span>
-            {/* <span className="animate-pulse font-light ml-[2px] opacity-70">|</span> */}
+          <h1 className="text-6xl sm:text-7xl md:text-8xl font-extrabold tracking-tight text-[#FCE154] drop-shadow-xl mt-2 flex items-center justify-center">
+            <span>$</span>
+            <span>{count.toLocaleString()}</span>
           </h1>
+          <div className="h-[2px] w-48 bg-gradient-to-r from-transparent via-[#FCE154] to-transparent mt-4 mb-4 opacity-70" />
+          <p className="text-lg sm:text-xl md:text-2xl font-medium text-white/90 drop-shadow-md max-w-md leading-snug">
+            Patent Pending AI-Powered Golf Skills<br className="hidden sm:block" /> Contest
+          </p>
         </div>
 
         {/* Mobile Device Mockup */}
@@ -80,12 +70,13 @@ export default function Hero() {
             {/* Dynamic Island Mock */}
             <div className="absolute left-1/2 top-2 z-20 h-6 w-1/3 -translate-x-1/2 rounded-full bg-black sm:top-3 sm:h-7" />
             
-            <Image
-              src="/images/Hero_Mobile_GIF.gif"
-              alt="App Demo"
-              fill
-              unoptimized
-              className="object-cover"
+            <video
+              src="/herovideo.mov"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
         </div>
@@ -94,9 +85,8 @@ export default function Hero() {
         <div className="mb-4 mt-6 w-full max-w-[280px] sm:max-w-[320px]">
           <Link
             href="#download"
-            className="flex w-full items-center justify-center rounded-lg bg-white px-8 py-4 text-sm font-extrabold tracking-wide text-[#1A2D1B] shadow-lg transition-transform hover:scale-105 active:scale-95"
-          >
-            DOWNLOAD NOW
+            className="flex w-full items-center justify-center rounded-xl bg-green-500 px-8 py-5 text-lg font-extrabold tracking-wide text-[#ffffff] shadow-lg transition-transform hover:scale-105 active:scale-95"
+          >ENTER CONTEST
           </Link>
         </div>
 
