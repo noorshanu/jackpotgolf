@@ -1,7 +1,46 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+
+const WORDS = ["Confidence", "Precision", "Power", "Focus"];
 
 export default function Hero() {
+  const [text, setText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [loopNum, setLoopNum] = useState(0);
+  const [typingSpeed, setTypingSpeed] = useState(150);
+
+  useEffect(() => {
+    const handleType = () => {
+      const i = loopNum % WORDS.length;
+      const fullWord = WORDS[i];
+
+      setText(
+        isDeleting
+          ? fullWord.substring(0, text.length - 1)
+          : fullWord.substring(0, text.length + 1)
+      );
+
+      // Speed up when deleting
+      setTypingSpeed(isDeleting ? 75 : 150);
+
+      if (!isDeleting && text === fullWord) {
+        // Pause at the end of typing before deleting
+        setTimeout(() => setIsDeleting(true), 2000);
+      } else if (isDeleting && text === "") {
+        // Move to next word when fully deleted
+        setIsDeleting(false);
+        setLoopNum((prev) => prev + 1);
+        setTypingSpeed(500); // Pause before typing next word
+      }
+    };
+
+    const timer = setTimeout(handleType, typingSpeed);
+    return () => clearTimeout(timer);
+  }, [text, isDeleting, loopNum, typingSpeed]);
+
   return (
     <section className="relative flex min-h-[100dvh] w-full flex-col items-center justify-between overflow-hidden py-12 md:py-20">
       {/* Background Image */}
@@ -29,8 +68,9 @@ export default function Hero() {
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-[0.2em] text-white drop-shadow-md uppercase">
             PLAY WITH
           </h2>
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-normal text-white drop-shadow-xl mt-1">
-            Confidence
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-normal text-white drop-shadow-xl mt-1 min-h-[1.2em] flex items-center justify-center">
+            <span>{text}</span>
+            {/* <span className="animate-pulse font-light ml-[2px] opacity-70">|</span> */}
           </h1>
         </div>
 
