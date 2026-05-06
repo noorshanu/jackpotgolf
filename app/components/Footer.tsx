@@ -25,11 +25,11 @@ export default function Footer() {
         {/* Logo Section */}
         <div className="mb-12">
           <Image
-            src="/images/GLX_Logo_White.svg"
-            alt="GolfLogix Logo"
-            width={240}
-            height={40}
-            className="h-8 w-auto md:h-10"
+            src="/images/logo.png"
+            alt="Jackpot Golf Logo"
+            width={106}
+            height={106}
+            className="h-24 w-24 shrink-0 rounded-xl object-cover md:h-14 md:w-14 md:rounded-xl"
           />
         </div>
 
@@ -43,7 +43,7 @@ export default function Footer() {
             </Link>
             
             <div className="mt-4 sm:mt-6 flex flex-col gap-5 sm:gap-6">
-              <h3 className="text-base sm:text-lg font-bold uppercase tracking-wider">GOLFLOGIX</h3>
+              <h3 className="text-base sm:text-lg font-bold uppercase tracking-wider">JACKPOT GOLF</h3>
               <Link href="#about" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">About Us</Link>
               <Link href="#blog" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">Blog</Link>
               <Link href="#contact" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">Contact Us</Link>

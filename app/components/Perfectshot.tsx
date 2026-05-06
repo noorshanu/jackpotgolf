@@ -64,7 +64,7 @@ export default function Perfectshot() {
         </div>
 
         {/* Video Slider */}
-        <div className="relative mx-auto mt-2 w-full max-w-[340px] sm:max-w-[400px] md:max-w-[440px]">
+        <div className="relative mx-auto mt-2 w-full max-w-[400px] sm:max-w-[400px] md:max-w-[440px]">
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] bg-[#1c1c1c] shadow-2xl flex flex-col border-4 border-[#1c1c1c]">
             
             {/* Video Container */}

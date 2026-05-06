@@ -124,11 +124,11 @@ export default function GolfLove() {
         
         {/* Header Section */}
         <div className="flex flex-col gap-3">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#1A2026]">
-            Golfers Love GolfLogix
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#1A2026]">
+            Golfers Love Jackpot Golf
           </h2>
           
-          <div className="flex items-center gap-3 text-lg font-bold tracking-wide text-[#1A2026]/80">
+          {/* <div className="flex items-center gap-3 text-lg font-bold tracking-wide text-[#1A2026]/80">
             <span>4.8</span>
             <div className="flex items-center gap-0.5 text-[#2d4c1e]">
               <FaStar className="size-[16px]" />
@@ -137,8 +137,8 @@ export default function GolfLove() {
               <FaStar className="size-[16px]" />
               <FaStarHalfAlt className="size-[16px]" />
             </div>
-            <span className="uppercase text-sm sm:text-base">IN THE APPSTORE</span>
-          </div>
+         
+          </div> */}
         </div>
 
       </div>
