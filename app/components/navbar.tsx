@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { FaStar, FaStarHalfAlt } from "react-icons/fa";
+import { FaStar, FaStarHalfAlt, FaRegCheckCircle, FaVideo, FaDollarSign } from "react-icons/fa";
 
 const brand = "#1d3c16";
 
@@ -33,7 +33,7 @@ function TryFreeButton({ className }: { className?: string }) {
   return (
     <Link
       href="#enter-contest"
-      className={`inline-flex items-center justify-center rounded-lg w-[280px] px-5 py-3 text-xl font-bold uppercase tracking-wide bg-green-500 text-white ${className ?? ""}`}
+      className={`inline-flex items-center justify-center rounded-lg px-3 sm:px-5 py-2.5 sm:py-3 text-xl sm:text-xl font-bold uppercase tracking-wide bg-green-500 text-white ${className ?? "w-full max-w-[280px]"}`}
       style={{
         borderColor: brand,
         color: "white",
@@ -50,34 +50,57 @@ export default function Navbar() {
 
   return (
     <header className="w-full bg-white">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-5 md:gap-4 md:px-6 md:py-4">
-        <div className="">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-5 md:gap-4 md:px-6 md:py-4">
+        <div className="flex shrink-0 items-center">
           <Image
             src="/images/logo.png"
             alt="Jackpot Golf"
             width={106}
             height={106}
-            className="h-24 w-24 shrink-0 rounded-xl object-cover md:h-14 md:w-14 md:rounded-xl"
+            className="h-24 w-24 shrink-0 rounded-xl object-cover md:h-24 md:w-24 md:rounded-xl"
             priority
           />
-      
         </div>
 
-        <div className="flex shrink-0 flex-col items-end gap-2 md:flex-row md:items-center md:gap-3 ">
-          <TryFreeButton />
+        <div className="flex flex-col items-end gap-1.5 min-w-0">
+          <div className="flex items-center justify-end gap-2 sm:gap-3 w-full">
+            <TryFreeButton className="w-full max-w-[280px]" />
+   
+          </div>
+          
 
+          <div className="flex items-center   w-full">
+          <div className="flex flex-wrap justify-start items-center gap-x-2 gap-y-1 text-[8.5px] sm:text-[11px] font-bold text-gray-500 uppercase tracking-widest">
+            <div className="flex items-center gap-1 whitespace-nowrap">
+              <FaRegCheckCircle className="text-[#31bb12] text-[10px] sm:text-[15px]" />
+              <span>AI-Verified</span>
+            </div>
+            <div className="flex items-center gap-1 whitespace-nowrap">
+              <FaVideo className="text-[#31bb12] text-[10px] sm:text-[15px]" />
+              <span>Video Proof</span>
+            </div>
+            <div className="flex items-center gap-1 whitespace-nowrap">
+              <div className="flex items-center justify-center rounded-full border-[1.5px] border-[#31bb12] h-[12px] w-[12px] sm:h-[15px] sm:w-[15px] text-[#31bb12]">
+                <FaDollarSign className="text-[6px] sm:text-[10px]" />
+              </div>
+              <span>Instant pay</span>
+            </div>
+
+          </div>
           <button
-            type="button"
-            className="flex flex-col justify-center gap-[5px] p-2 md:hidden"
-            style={{ color: brand }}
-            aria-expanded={menuOpen}
-            aria-controls="mobile-nav-menu"
-            aria-label={menuOpen ? "Close menu" : "Open menu"}
-            onClick={() => setMenuOpen((o) => !o)}
-          >
-            <span className="block h-0.5 w-6 rounded-full bg-current" />
-            <span className="block h-0.5 w-6 rounded-full bg-current" />
-          </button>
+              type="button"
+              className="flex shrink-0 flex-col justify-center gap-[5px] p-2 md:hidden"
+              style={{ color: brand }}
+              aria-expanded={menuOpen}
+              aria-controls="mobile-nav-menu"
+              aria-label={menuOpen ? "Close menu" : "Open menu"}
+              onClick={() => setMenuOpen((o) => !o)}
+            >
+              <span className="block h-0.5 w-6 rounded-full bg-current" />
+              <span className="block h-0.5 w-6 rounded-full bg-current" />
+            </button>
+          </div>
+
         </div>
       </div>
 
