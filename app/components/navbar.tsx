@@ -32,15 +32,15 @@ function StarRating({ className }: { className?: string }) {
 function TryFreeButton({ className }: { className?: string }) {
   return (
     <Link
-      href="#try-free"
-      className={`inline-flex items-center justify-center rounded-lg border-2 px-5 py-2.5 text-xs font-bold uppercase tracking-wide ${className ?? ""}`}
+      href="#enter-contest"
+      className={`inline-flex items-center justify-center rounded-lg w-[280px] px-5 py-3 text-xl font-bold uppercase tracking-wide bg-green-500 text-white ${className ?? ""}`}
       style={{
         borderColor: brand,
-        color: brand,
-        backgroundColor: "transparent",
+        color: "white",
+        backgroundColor: "green-500",
       }}
     >
-      TRY IT FREE
+     ENTER CONTEST
     </Link>
   );
 }
@@ -50,7 +50,7 @@ export default function Navbar() {
 
   return (
     <header className="w-full bg-white">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 md:gap-4 md:px-6 md:py-4">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-5 md:gap-4 md:px-6 md:py-4">
         <div className="">
           <Image
             src="/images/logo.png"
