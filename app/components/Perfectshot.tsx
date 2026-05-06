@@ -12,6 +12,9 @@ export default function Perfectshot() {
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#1A2026] leading-[1.1]">
       RECENT WINNERS
           </h2>
+          <p className="text-lg sm:text-xl md:text-2xl font-medium mt-2 text-gray-500 drop-shadow-md max-w-md leading-snug">
+            See the latest winners of the Jackpot Golf contest.
+          </p>
         </div>
 
         {/* Mobile Device Mockup */}
