@@ -71,7 +71,7 @@ export default function Hero() {
             <div className="absolute left-1/2 top-2 z-20 h-6 w-1/3 -translate-x-1/2 rounded-full bg-black sm:top-3 sm:h-7" />
             
             <video
-              src="/herovideo.mov"
+              src="/herovideo.mp4"
               autoPlay
               loop
               muted
