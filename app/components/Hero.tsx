@@ -76,6 +76,7 @@ export default function Hero() {
               loop
               muted
               playsInline
+              preload="auto"
               className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
