@@ -42,12 +42,13 @@ export default function Newex() {
             {/* Dynamic Island Mock */}
             <div className="absolute left-1/2 top-2 z-20 h-6 w-1/3 -translate-x-1/2 rounded-full bg-black sm:top-3 sm:h-7" />
             
-            <Image
-              src="/images/Hero_Mobile_GIF.gif"
-              alt="3D Virtual Reality Demo"
-              fill
-              unoptimized
-              className="object-cover"
+            <video
+              src="/scan.mov"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
         </div>
