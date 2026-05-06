@@ -55,42 +55,64 @@ export default function Newex() {
         </div>
 
         {/* Text and Buttons Section */}
-        <div className="flex w-full flex-col gap-6 md:max-w-2xl mt-4 md:mt-8 text-left">
+        <div className="flex w-full flex-col gap-8 md:max-w-2xl mt-4 md:mt-8 text-left">
           
-          {/* Feature Header */}
-          <div className="flex items-center gap-4">
-            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-[#1A2D1B] border border-[#2D4C1E] shadow-lg">
-              {/* Replace with specific 3D icon if needed, using FaCube for now */}
-              <IoQrCodeOutline className="h-8 w-8 text-white" />
+          {/* Feature 1: SCAN */}
+          <div className="flex flex-row  gap-4">
+            <div className="">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-[#1A2D1B] border border-[#2D4C1E] shadow-lg">
+                <IoQrCodeOutline className="h-8 w-8 text-white" />
+              </div>
+             
             </div>
+            <div>
             <h3 className="text-2xl sm:text-3xl font-extrabold text-white drop-shadow-md uppercase tracking-wide">
-              SCAN
-            </h3>
+                SCAN 
+              </h3>
+            <p className="text-lg sm:text-xl font-medium leading-relaxed text-white/90 drop-shadow-sm">
+              Find the QR code at any par 3 tee box. Scan it, pay your entry fee ($2 to $2,500), and you're in. Enter up to 48 hours before your tee time.
+            </p>
+            </div>
+          
           </div>
-          <div className="flex items-center gap-4">
-            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-[#1A2D1B] border border-[#2D4C1E] shadow-lg">
-              {/* Replace with specific 3D icon if needed, using FaCube for now */}
+
+          {/* Feature 2: PLAY */}
+          <div className="flex flex-row  gap-4">
+            <div className="">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-[#1A2D1B] border border-[#2D4C1E] shadow-lg">
                 <GiGolfFlag className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-white drop-shadow-md uppercase tracking-wide">
+             
+            </div>
+            <div>
+            <h3 className="text-2xl sm:text-3xl font-extrabold text-white drop-shadow-md uppercase tracking-wide">
                 PLAY
               </h3>
+            <p className="text-lg sm:text-xl font-medium leading-relaxed text-white/90 drop-shadow-sm ">
+              Our AI cameras recognize your face and track your shot automatically. No stopping, no scanning, no waiting. Just play your round.
+            </p>
             </div>
-            <div className="flex items-center gap-4">
-            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-[#1A2D1B] border border-[#2D4C1E] shadow-lg">
-              {/* Replace with specific 3D icon if needed, using FaCube for now */}
+           
+          </div>
+
+          {/* Feature 3: WIN */}
+          <div className="flex flex-row  gap-4">
+            <div className="">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-[#1A2D1B] border border-[#2D4C1E] shadow-lg">
                 <GiTrophyCup className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-white drop-shadow-md uppercase tracking-wide">
+             
+            </div>
+            <div>
+            <h3 className="text-2xl sm:text-3xl font-extrabold text-white drop-shadow-md uppercase tracking-wide">
                 WIN
               </h3>
+            <p className="text-lg sm:text-xl font-medium leading-relaxed text-white/90 drop-shadow-sm">
+              Get a cinematic 3-clip video of your shot with Blue Comet tracer. Check the leaderboard. Win up to $1,000,000 for a hole-in-one.
+            </p>
             </div>
-
-
-          {/* Description Paragraph */}
-          <p className="text-lg sm:text-xl font-medium leading-relaxed text-white drop-shadow-sm">
-            The only app with immersive 3D virtual holes. Get a complete view of every course, from tee to green. Read elevation changes, visualize every shot, and strategize with precision—so you can visualize the course like never before.
-          </p>
+           
+          </div>
 
           {/* Action Buttons */}
           <div className="mt-4 flex flex-col gap-4">
