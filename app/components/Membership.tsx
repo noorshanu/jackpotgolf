@@ -75,7 +75,7 @@ export default function Membership() {
           quality={100}
         />
         {/* Subtle overlay to ensure text readability */}
-        <div className="absolute inset-0 bg-black/10" />
+        <div className="absolute inset-0 bg-black/50" />
       </div>
 
       <div className="relative z-10 flex w-full flex-col items-center gap-8 px-4 sm:px-6 md:px-8 lg:max-w-6xl">
