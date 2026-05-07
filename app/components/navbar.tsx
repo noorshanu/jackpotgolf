@@ -8,26 +8,13 @@ import { FaStar, FaStarHalfAlt, FaRegCheckCircle, FaVideo, FaDollarSign } from "
 const brand = "#1d3c16";
 
 const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "#courses", label: "Courses" },
+  { href: "#for-golfers", label: "For Golfers" },
+  { href: "#for-courses", label: "For Courses" },
+  { href: "#for-tournaments", label: "For Tournaments" },
+  { href: "#find-course", label: "Find a Course" },
   { href: "#about-us", label: "About Us" },
+  { href: "#login", label: "Login" },
 ];
-
-function StarRating({ className }: { className?: string }) {
-  return (
-    <div
-      className={`flex items-center gap-0.5 ${className ?? ""}`}
-      style={{ color: brand }}
-      aria-label="Rated 4.5 out of 5 stars"
-    >
-      <FaStar className="size-[15px]" aria-hidden />
-      <FaStar className="size-[15px]" aria-hidden />
-      <FaStar className="size-[15px]" aria-hidden />
-      <FaStar className="size-[15px]" aria-hidden />
-      <FaStarHalfAlt className="size-[15px]" aria-hidden />
-    </div>
-  );
-}
 
 function TryFreeButton({ className }: { className?: string }) {
   return (
@@ -65,42 +52,46 @@ export default function Navbar() {
         <div className="flex flex-col items-end gap-1.5 min-w-0">
           <div className="flex items-center justify-end gap-2 sm:gap-3 w-full">
             <TryFreeButton className="w-full max-w-[280px]" />
-   
           </div>
           
-
-          <div className="flex items-center   w-full">
-          <div className="flex flex-wrap justify-start items-center gap-x-2 gap-y-1 text-[8.5px] sm:text-[11px] font-bold text-gray-500 uppercase tracking-widest">
-            <div className="flex items-center gap-1 whitespace-nowrap">
-              <FaRegCheckCircle className="text-[#31bb12] text-[10px] sm:text-[15px]" />
-              <span>AI-Verified</span>
-            </div>
-            <div className="flex items-center gap-1 whitespace-nowrap">
-              <FaVideo className="text-[#31bb12] text-[10px] sm:text-[15px]" />
-              <span>Video Proof</span>
-            </div>
-            <div className="flex items-center gap-1 whitespace-nowrap">
-              <div className="flex items-center justify-center rounded-full border-[1.5px] border-[#31bb12] h-[12px] w-[12px] sm:h-[15px] sm:w-[15px] text-[#31bb12]">
-                <FaDollarSign className="text-[6px] sm:text-[10px]" />
+          <div className="flex items-center w-full">
+            <div className="flex flex-wrap justify-start items-center gap-x-2 gap-y-1 text-[8.5px] sm:text-[11px] font-bold text-gray-500 uppercase tracking-widest">
+              <div className="flex items-center gap-1 whitespace-nowrap">
+                <FaRegCheckCircle className="text-[#31bb12] text-[10px] sm:text-[15px]" />
+                <span>AI-Verified</span>
               </div>
-              <span>Instant pay</span>
+              <div className="flex items-center gap-1 whitespace-nowrap">
+                <FaVideo className="text-[#31bb12] text-[10px] sm:text-[15px]" />
+                <span>Video Proof</span>
+              </div>
+              <div className="flex items-center gap-1 whitespace-nowrap">
+                <div className="flex items-center justify-center rounded-full border-[1.5px] border-[#31bb12] h-[12px] w-[12px] sm:h-[15px] sm:w-[15px] text-[#31bb12]">
+                  <FaDollarSign className="text-[6px] sm:text-[10px]" />
+                </div>
+                <span>Instant pay</span>
+              </div>
             </div>
-
-          </div>
-          <button
+            
+            <button
               type="button"
-              className="flex shrink-0 flex-col justify-center gap-[5px] p-2 md:hidden"
+              className="flex shrink-0 flex-col justify-center gap-[5px] p-2 md:hidden ml-auto"
               style={{ color: brand }}
               aria-expanded={menuOpen}
-              aria-controls="mobile-nav-menu"
               aria-label={menuOpen ? "Close menu" : "Open menu"}
               onClick={() => setMenuOpen((o) => !o)}
             >
-              <span className="block h-0.5 w-6 rounded-full bg-current" />
-              <span className="block h-0.5 w-6 rounded-full bg-current" />
+              {menuOpen ? (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <>
+                  <span className="block h-0.5 w-6 rounded-full bg-current" />
+                  <span className="block h-0.5 w-6 rounded-full bg-current" />
+                </>
+              )}
             </button>
           </div>
-
         </div>
       </div>
 
@@ -121,15 +112,15 @@ export default function Navbar() {
             aria-hidden={!menuOpen}
           >
             <div className="mx-auto flex max-w-6xl flex-col gap-1">
-              <ul className="flex flex-col overflow-hidden rounded-lg border border-[rgba(29,60,22,0.22)]">
+              <ul className="flex flex-col overflow-hidden ">
                 {navLinks.map(({ href, label }) => (
                   <li
                     key={href}
-                    className="border-b border-[rgba(29,60,22,0.22)] last:border-b-0"
+                    className=""
                   >
                     <Link
                       href={href}
-                      className="block py-3.5 pl-1 pr-1 text-base font-semibold tracking-tight transition-colors hover:bg-[rgba(29,60,22,0.06)]"
+                      className="block py-3.5 pl-4 pr-4 text-base font-semibold tracking-tight transition-colors hover:bg-[rgba(29,60,22,0.06)]"
                       style={{ color: brand }}
                       onClick={() => setMenuOpen(false)}
                     >
@@ -137,6 +128,15 @@ export default function Navbar() {
                     </Link>
                   </li>
                 ))}
+                <li className="p-4">
+                  <Link
+                    href="#enter-contest"
+                    className="block w-full rounded-lg bg-green-500 py-3.5 text-center text-base font-bold tracking-tight text-white transition-colors hover:bg-green-600"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    ENTER CONTEST
+                  </Link>
+                </li>
               </ul>
             </div>
           </nav>
