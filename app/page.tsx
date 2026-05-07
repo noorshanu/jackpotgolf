@@ -5,6 +5,7 @@ import Precesion from "./components/Precesion";
 import MasterApproch from "./components/MasterApproch";
 import GolfLove from "./components/GolfLove";
 import Membership from "./components/Membership";
+import Contest from "./components/Contest";
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
         <Newex />
         <Perfectshot />
         <Precesion />
-        <MasterApproch />
+        <Contest />
+        {/* <MasterApproch /> */}
         <GolfLove />
         <Membership />
       </main>
