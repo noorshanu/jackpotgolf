@@ -123,12 +123,12 @@ export default function Membership() {
             {FEATURES.map((feature, idx) => (
               <div
                 key={idx}
-                className="group relative w-[290px] shrink-0 snap-center md:w-[340px] rounded-2xl p-[1.5px] bg-gradient-to-br from-[#eab308]/60 via-[#3a4654]/40 to-[#eab308]/30 transition-all duration-300 hover:from-[#eab308] hover:via-[#eab308]/30 hover:to-[#eab308] hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(234,179,8,0.25)]"
+                className="group relative w-[290px] shrink-0 snap-center md:w-[340px] rounded-2xl p-[1.5px] bg-gradient-to-br from-[#22c55e]/70 via-[#1d3c16]/40 to-[#22c55e]/30 transition-all duration-300 hover:from-[#4ade80] hover:via-[#22c55e]/40 hover:to-[#4ade80] hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(34,197,94,0.3)]"
               >
-                <div className="absolute inset-0 rounded-2xl bg-[#eab308]/0 blur-xl transition-all duration-500 group-hover:bg-[#eab308]/10 -z-10" />
-                <div className="flex h-full flex-col items-start justify-start rounded-2xl bg-gradient-to-br from-[#1C242D] to-[#0f1519] p-7 shadow-2xl">
-                  <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-[#eab308]/10 border border-[#eab308]/30 transition-all duration-300 group-hover:bg-[#eab308]/20 group-hover:border-[#eab308]/60 group-hover:shadow-[0_0_20px_rgba(234,179,8,0.3)]">
-                    <feature.icon className="text-3xl text-[#eab308]" />
+                <div className="absolute inset-0 rounded-2xl bg-[#22c55e]/0 blur-xl transition-all duration-500 group-hover:bg-[#22c55e]/15 -z-10" />
+                <div className="flex h-full flex-col items-start justify-start rounded-2xl bg-gradient-to-br from-[#0f2a14] to-[#06140a] p-7 shadow-2xl">
+                  <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-[#22c55e]/10 border border-[#22c55e]/40 transition-all duration-300 group-hover:bg-[#22c55e]/20 group-hover:border-[#4ade80] group-hover:shadow-[0_0_20px_rgba(34,197,94,0.4)]">
+                    <feature.icon className="text-3xl text-[#4ade80]" />
                   </div>
 
                   <h3 className="text-xl font-extrabold text-white uppercase tracking-wide mb-3">
