@@ -6,6 +6,7 @@ import MasterApproch from "./components/MasterApproch";
 import GolfLove from "./components/GolfLove";
 import Membership from "./components/Membership";
 import Contest from "./components/Contest";
+import YourShot from "./components/YourShot";
 
 export default function Home() {
   return (
@@ -14,8 +15,10 @@ export default function Home() {
         <Hero />
         <Newex />
         <Perfectshot />
+     
         <Precesion />
         <Contest />
+        <YourShot />
         {/* <MasterApproch /> */}
         <GolfLove />
         <Membership />
