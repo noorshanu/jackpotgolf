@@ -11,7 +11,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative w-full bg-[#1a3508] px-6 py-12 text-white md:px-12 lg:px-24">
+    <footer className="relative w-full bg-[#1a3508] px-6 py-12 text-white md:px-12 lg:px-24 text-center sm:text-left">
       {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}
@@ -21,7 +21,7 @@ export default function Footer() {
         <FaChevronUp className="h-6 w-6" />
       </button>
 
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-6xl flex flex-col items-center sm:items-start">
         {/* Logo Section */}
         <div className="mb-12">
           <Image
@@ -34,45 +34,27 @@ export default function Footer() {
         </div>
 
         {/* Links Grid */}
-        <div className="grid grid-cols-2 gap-x-4 gap-y-12 sm:gap-x-8">
-          
-          {/* Column 1 */}
-          <div className="flex flex-col gap-5 sm:gap-6">
-            <Link href="#map-licensing" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">
-              Map Licensing
-            </Link>
-            
-            <div className="mt-4 sm:mt-6 flex flex-col gap-5 sm:gap-6">
-              <h3 className="text-base sm:text-lg font-bold uppercase tracking-wider">JACKPOT GOLF</h3>
-              <Link href="#about" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">About Us</Link>
-              <Link href="#blog" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">Blog</Link>
-              <Link href="#contact" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">Contact Us</Link>
-              <Link href="#login" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">Club House Log In</Link>
-            </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-12 sm:gap-x-8 w-full">
+
+          {/* Column 1: Main Nav Items */}
+          <div className="flex flex-col items-center sm:items-start gap-5 sm:gap-6">
+            <h3 className="text-base sm:text-lg font-bold uppercase tracking-wider">EXPLORE</h3>
+            <Link href="#for-golfers" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">For Golfers</Link>
+            <Link href="#for-courses" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">For Courses</Link>
+            <Link href="#for-tournaments" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">For Tournaments</Link>
+            <Link href="#find-course" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">Find a Course</Link>
+            <Link href="#about-us" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">About Us</Link>
+            <Link href="#login" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">Login</Link>
           </div>
 
-          {/* Column 2 */}
-          <div className="flex flex-col gap-5 sm:gap-6">
-            <Link href="#find-course" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">
-              Find A Course
-            </Link>
-            <Link href="#explore" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">
-              Explore More Features
-            </Link>
-            
-            <div className="mt-3 sm:mt-6 flex flex-col gap-5 sm:gap-6">
-              <Link href="#privacy" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">Privacy Policy</Link>
-              <Link href="#terms" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">Terms of Service</Link>
-              <Link href="#opt-out" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">Opt-out of Ads/Sharing</Link>
-              <Link href="#do-not-sell" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors max-w-[200px] sm:max-w-none leading-snug pr-2">Do Not Sell or Share My Info</Link>
-              <Link href="#accessibility" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">Accessibility</Link>
-            </div>
-          </div>
+     
+
+  
 
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-20 flex flex-col gap-6">
+        <div className="mt-20 flex flex-col items-center sm:items-start gap-6 w-full">
           {/* Social Icons */}
           <div className="flex items-center gap-6">
             <a href="#facebook" aria-label="Facebook" className="hover:opacity-80 transition-opacity">
@@ -87,11 +69,11 @@ export default function Footer() {
           </div>
 
           {/* Copyright & Privacy Bottom Link */}
-          <div className="flex flex-col gap-2 mt-2">
+          <div className="flex flex-col items-center sm:items-start gap-2 mt-2">
             <Link href="#privacy" className="text-sm font-medium underline underline-offset-4 hover:text-white/80 transition-colors">
               Privacy Policy
             </Link>
-            <p className="text-sm font-medium mt-1">
+            <p className="text-sm font-medium mt-1 text-center sm:text-left">
               © 2025. All rights reserved.
             </p>
           </div>
