@@ -118,7 +118,7 @@ export default function Navbar() {
                 <li className="p-4">
                   <Link
                     href="#enter-contest"
-                    className="block w-full rounded-lg bg-green-500 py-3.5 text-center text-base font-bold tracking-tight text-white transition-colors hover:bg-green-600"
+                    className="block w-full rounded-lg bg-[#1a3508] py-3.5 text-center text-base font-bold tracking-tight text-white transition-colors hover:bg-green-600"
                     onClick={() => setMenuOpen(false)}
                   >
                     ENTER CONTEST
