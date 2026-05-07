@@ -36,7 +36,7 @@ export default function YourShot() {
         {/* Header Text */}
         <div className="flex flex-col items-center text-center mt-2">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-[#1A2026] uppercase">
-            YOUR SHOT,CINEMATIC
+            CINEMATIC GOLF SHOTS
           </h2>
           <p className="text-lg sm:text-xl font-medium mt-4 text-gray-500 max-w-2xl leading-relaxed">
             Every shot gets the tracer treatment — a cinematic 3D video showing your ball flight with real-time metrics.

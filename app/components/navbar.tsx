@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { FaStar, FaStarHalfAlt, FaRegCheckCircle, FaVideo, FaDollarSign } from "react-icons/fa";
+
 
 const brand = "#1d3c16";
 
@@ -50,28 +50,15 @@ export default function Navbar() {
         </div>
 
         <div className="flex flex-col items-end gap-1.5 min-w-0">
-          <div className="flex items-center justify-end gap-2 sm:gap-3 w-full">
-            <TryFreeButton className="w-full max-w-[280px]" />
+          <div className="flex items-center justify-end gap-2 sm:gap-3 w-full mr-2">
+            <TryFreeButton className="w-[280px]" />
           </div>
           
-          <div className="flex items-center w-full">
-            <div className="flex flex-wrap justify-start items-center gap-x-2 gap-y-1 text-[8.5px] sm:text-[11px] font-bold text-gray-500 uppercase tracking-widest">
-              <div className="flex items-center gap-1 whitespace-nowrap">
-                <FaRegCheckCircle className="text-[#31bb12] text-[10px] sm:text-[15px]" />
-                <span>AI-Verified</span>
-              </div>
-              <div className="flex items-center gap-1 whitespace-nowrap">
-                <FaVideo className="text-[#31bb12] text-[10px] sm:text-[15px]" />
-                <span>Video Proof</span>
-              </div>
-              <div className="flex items-center gap-1 whitespace-nowrap">
-                <div className="flex items-center justify-center rounded-full border-[1.5px] border-[#31bb12] h-[12px] w-[12px] sm:h-[15px] sm:w-[15px] text-[#31bb12]">
-                  <FaDollarSign className="text-[6px] sm:text-[10px]" />
-                </div>
-                <span>Instant pay</span>
-              </div>
-            </div>
-            
+          <div className="flex justify-center w-full gap-2">
+
+            <Link href="#login" className="text-lg sm:text-lg  hover:text-white/80 transition-colors  text-green-800 font-bold uppercase tracking-widest px-4 py-2 rounded-md underline ml-38">
+            LogIn
+            </Link>
             <button
               type="button"
               className="flex shrink-0 flex-col justify-center gap-[5px] p-2 md:hidden ml-auto"

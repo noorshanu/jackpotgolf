@@ -14,7 +14,7 @@ export default function Contest() {
             THE CONTEST
           </h2>
           <p className="text-lg sm:text-xl font-medium mt-4 text-gray-500 max-w-2xl leading-relaxed">
-            Scan the QR code at any par 3 hole, choose your entry fee, and play. One swing. One chance. AI handles the rest.
+            Scan the QR code at any participating par 3 hole, choose your entry fee, and play. One swing. One chance. AI handles the rest.
           </p>
         </div>
 
@@ -41,7 +41,7 @@ export default function Contest() {
               </div>
 
               <p className="text-gray-600 text-lg leading-relaxed font-medium">
-                Our 24/7 skills contest is always open across every partner course. Pick your entry fee from $2 to $2,500 — sink it from the tee and your entry is multiplied by 400X. A $2,500 entry wins $1,000,000. Unlimited winners — every ace gets paid. One entry per round.
+                Our 24/7 skills contest is always open across every partner course. Pick your entry fee from $10 to $2,500 — sink it from the tee and your entry is multiplied by 400X. A $2,500 entry wins $1,000,000. Unlimited winners — every ace gets paid. One entry per round.
               </p>
             </div>
           </div>
@@ -51,7 +51,7 @@ export default function Contest() {
             {/* Checklist */}
             <ul className="flex flex-col gap-4 text-lg font-medium text-gray-700 bg-white p-6 sm:p-8 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-50">
               {[
-                "Entry fees: $2 – $2,500 (you choose your stakes)",
+                "Entry fees: $10 – $2,500 (you choose your stakes)",
                 "Your entry fee × 400 = your payout",
                 "Unlimited winners — every ace gets paid",
                 "24/7 across all partner courses",
@@ -76,7 +76,7 @@ export default function Contest() {
                 Closest-To-Pin 50/50
               </h4>
               <p className="text-gray-600 text-lg font-medium leading-relaxed mb-8">
-                Add $5 when you enter and compete for the daily closest-to-pin pool. AI measures your distance to sub-inch accuracy. Closest golfer splits the pot 50/50 with the course. Resets at midnight.
+                Add $5 when you enter and compete for the daily closest-to-pin pool at your course. AI measures your distance to sub-inch accuracy. Closest golfer splits the pot 50/50 with the course. Resets at midnight.
               </p>
               <div className="flex flex-col">
                 <span className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-1">Daily Pool</span>

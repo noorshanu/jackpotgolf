@@ -46,7 +46,7 @@ const FEATURES = [
   {
     icon: BsSearch,
     title: "AI VISION",
-    desc: "4K cameras with 25x optical zoom see you from over 100 feet away — crystal clear in any lighting condition."
+    desc: "4K cameras see you from over 100 feet away — crystal clear in any lighting condition."
   }
 ];
 
@@ -68,7 +68,7 @@ export default function Membership() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/pricing-bg-mob.png"
+          src="/memb.jpeg"
           alt="Background"
           fill
           className="object-cover object-center"

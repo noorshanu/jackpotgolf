@@ -125,7 +125,7 @@ export default function GolfLove() {
         {/* Header Section */}
         <div className="flex flex-col gap-3">
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#1A2026]">
-            Golfers Love Jackpot Golf
+            Golfers Love Us
           </h2>
           
           {/* <div className="flex items-center gap-3 text-lg font-bold tracking-wide text-[#1A2026]/80">

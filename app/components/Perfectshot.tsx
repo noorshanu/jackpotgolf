@@ -59,7 +59,7 @@ export default function Perfectshot() {
             RECENT WINNERS
           </h2>
           <p className="text-lg sm:text-xl md:text-2xl font-medium mt-2 text-gray-500 drop-shadow-md max-w-md leading-snug">
-            See the latest winners of the Jackpot Golf contest.
+            See our latest winners.
           </p>
         </div>
 

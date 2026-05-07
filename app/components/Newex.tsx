@@ -70,7 +70,7 @@ export default function Newex() {
                 SCAN 
               </h3>
             <p className="text-lg sm:text-xl font-medium leading-relaxed text-white/90 drop-shadow-sm">
-              Find the QR code at any par 3 tee box. Scan it, pay your entry fee ($2 to $2,500), and you're in. Enter up to 48 hours before your tee time.
+              Scan the QR code, pay your entry fee ($2 to $2,500), and you're in. Enter up to 48 hours before your tee time.
             </p>
             </div>
           
