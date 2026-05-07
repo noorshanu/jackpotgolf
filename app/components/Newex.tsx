@@ -118,7 +118,7 @@ export default function Newex() {
           <div className="mt-4 flex flex-col gap-4">
             <Link
               href="#enter-contest"
-              className="flex w-full items-center justify-center rounded-xl bg-green-500 px-8 py-5 text-lg font-extrabold tracking-wide text-[#ffffff] shadow-lg transition-transform hover:scale-105 active:scale-95"
+              className="flex w-full items-center justify-center rounded-xl bg-[#1a3508] px-8 py-5 text-lg font-extrabold tracking-wide text-[#ffffff] shadow-lg transition-transform hover:scale-105 active:scale-95"
             >
              ENTER CONTEST
             </Link>

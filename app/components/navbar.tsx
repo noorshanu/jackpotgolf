@@ -24,7 +24,7 @@ function TryFreeButton({ className }: { className?: string }) {
       style={{
         borderColor: brand,
         color: "white",
-        backgroundColor: "green-500",
+        backgroundColor: "#1a3508",
       }}
     >
      ENTER CONTEST

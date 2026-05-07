@@ -157,7 +157,7 @@ export default function Membership() {
         <div className="w-full max-w-md">
           <Link
             href="#get-started"
-            className="flex w-full items-center justify-center rounded-xl bg-green-500 px-8 py-5 text-xl font-extrabold tracking-wide text-white shadow-lg transition-transform hover:scale-105 active:scale-95"
+            className="flex w-full items-center justify-center rounded-xl bg-[#1a3508] px-8 py-5 text-xl font-extrabold tracking-wide text-white shadow-lg transition-transform hover:scale-105 active:scale-95"
           >
             ENTER CONTEST
           </Link>

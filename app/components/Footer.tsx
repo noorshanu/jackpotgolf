@@ -11,7 +11,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative w-full bg-[#1e3415] px-6 py-12 text-white md:px-12 lg:px-24">
+    <footer className="relative w-full bg-[#1a3508] px-6 py-12 text-white md:px-12 lg:px-24">
       {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}

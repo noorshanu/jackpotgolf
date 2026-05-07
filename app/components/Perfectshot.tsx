@@ -138,7 +138,7 @@ export default function Perfectshot() {
           <div className="mt-4 flex flex-col gap-3">
             <Link
               href="#enter-contest"
-              className="flex w-full items-center justify-center rounded-xl bg-green-500 px-8 py-[1.125rem] text-[1.05rem] font-extrabold tracking-wide text-[#ffffff] shadow-md transition-transform hover:scale-[1.02] active:scale-[0.98]"
+              className="flex w-full items-center justify-center rounded-xl bg-[#1a3508] px-8 py-[1.125rem] text-[1.05rem] font-extrabold tracking-wide text-[#ffffff] shadow-md transition-transform hover:scale-[1.02] active:scale-[0.98]"
             >
               ENTER CONTEST
             </Link>

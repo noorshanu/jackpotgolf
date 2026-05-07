@@ -87,7 +87,7 @@ export default function Contest() {
             {/* CTA Button */}
             <Link
               href="#enter-contest"
-              className="flex w-full items-center justify-center rounded-xl bg-green-500 px-8 py-5 text-xl font-extrabold tracking-wide text-white shadow-lg transition-transform hover:scale-[1.02] active:scale-[0.98]"
+              className="flex w-full items-center justify-center rounded-xl bg-[#1a3508] px-8 py-5 text-xl font-extrabold tracking-wide text-white shadow-lg transition-transform hover:scale-[1.02] active:scale-[0.98]"
             >
               ENTER CONTEST
             </Link>

@@ -87,21 +87,21 @@ export default function Hero() {
         <div className="mb-4 mt-6 w-full ">
           <Link
             href="#download"
-            className="flex w-full items-center justify-center rounded-xl bg-green-500 px-8 py-5 text-xl font-extrabold tracking-wide text-[#ffffff] shadow-lg transition-transform hover:scale-105 active:scale-95"
+            className="flex w-full items-center justify-center rounded-xl bg-[#1a3508] px-8 py-5 text-xl font-extrabold tracking-wide text-[#ffffff] shadow-lg transition-transform hover:scale-105 active:scale-95"
           >ENTER CONTEST
           </Link>
         </div>
         <div className="flex flex-wrap justify-start items-center gap-x-2 gap-y-1 text-[8.5px] sm:text-[11px] font-bold text-gray-500 uppercase tracking-widest">
               <div className="flex items-center gap-1 whitespace-nowrap">
-                <FaRegCheckCircle className="text-[#31bb12] text-[22px]" />
+                <FaRegCheckCircle className="text-[#4fad11] text-[22px]" />
                 <span className="text-[12px]">AI-Verified</span>
               </div>
               <div className="flex items-center gap-1 whitespace-nowrap">
-                <FaVideo className="text-[#31bb12] text-[22px]" />
+                <FaVideo className="text-[#4fad11] text-[22px]" />
                 <span className="text-[12px]">Video Proof</span>
               </div>
               <div className="flex items-center gap-1 whitespace-nowrap">
-                <div className="flex items-center justify-center rounded-full border-[1.5px] border-[#31bb12] h-[21px] w-[21px] text-[#31bb12]">
+                <div className="flex items-center justify-center rounded-full border-[1.5px] border-[#4fad11] h-[21px] w-[21px] text-[#4fad11]">
                   <FaDollarSign className="text-[18px]" />
                 </div>
                 <span className="text-[12px]">Instant pay</span>
