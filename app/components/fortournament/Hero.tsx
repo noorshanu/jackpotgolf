@@ -87,13 +87,7 @@ export default function Hero() {
         </div>
 
         {/* Call to Action */}
-        <div className="mb-4 mt-6 w-full ">
-          <Link
-            href="#download"
-            className="flex w-full items-center justify-center rounded-xl bg-[#1a3508] px-8 py-5 text-xl font-extrabold tracking-wide text-[#ffffff] shadow-lg transition-transform hover:scale-105 active:scale-95"
-          >ENTER CONTEST
-          </Link>
-        </div>
+    
         {/* Comparison Cards */}
         <div className="relative w-full max-w-md mx-auto flex flex-col gap-3">
           {/* Traditional Card */}
@@ -132,6 +126,13 @@ export default function Hero() {
               Revenue share every event
             </p>
           </div>
+          <div className="mb-4 mt-6 w-full ">
+          <Link
+            href="#download"
+            className="flex w-full items-center justify-center rounded-xl bg-[#1a3508] px-8 py-5 text-xl font-extrabold tracking-wide text-[#ffffff] shadow-lg transition-transform hover:scale-105 active:scale-95"
+          >ENTER CONTEST
+          </Link>
+        </div>
         </div>
 
       </div>
