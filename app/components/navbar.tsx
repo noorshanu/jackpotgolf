@@ -10,7 +10,7 @@ const brand = "#1d3c16";
 const navLinks = [
   { href: "#for-golfers", label: "For Golfers" },
   { href: "#for-courses", label: "For Courses" },
-  { href: "#for-tournaments", label: "For Tournaments" },
+  { href: "/for-tournament", label: "For Tournaments" },
   { href: "#find-course", label: "Find a Course" },
   { href: "#about-us", label: "About Us" },
   { href: "#login", label: "Login" },
