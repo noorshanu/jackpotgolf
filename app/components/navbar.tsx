@@ -50,7 +50,7 @@ export default function Navbar() {
         </div>
 
         <div className="flex flex-col items-end gap-1.5 min-w-0">
-          <div className="flex items-center justify-end gap-2 sm:gap-3 w-full mr-2">
+          <div className="flex items-center justify-end gap-2 sm:gap-3 w-full ">
             <TryFreeButton className="w-[280px]" />
           </div>
           
