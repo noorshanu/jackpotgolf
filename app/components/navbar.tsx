@@ -56,7 +56,7 @@ export default function Navbar() {
           
           <div className="flex justify-center w-full gap-2">
 
-            <Link href="#login" className="text-lg sm:text-lg  hover:text-white/80 transition-colors  text-green-800 font-bold uppercase tracking-widest px-4 py-2 rounded-md underline ml-36">
+            <Link href="#login" className="text-lg sm:text-lg  hover:text-white/80 transition-colors  text-green-800 font-bold uppercase tracking-widest px-4 py-2 rounded-md underline ml-28">
             LogIn
             </Link>
             <button
