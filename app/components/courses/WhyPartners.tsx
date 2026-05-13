@@ -9,12 +9,12 @@ const FEATURES = [
   {
     icon: FaDollarSign,
     title: "DUAL REVENUE STREAMS",
-    desc: "Earn from daily Closest-to-Pin pools (50/50 split) PLUS a configurable revenue share on all entry fees.",
+    desc: "Earn from daily Closest-to-Pin pools (50/50 split) PLUS revenue share for all your entry fees.",
   },
   {
     icon: FaVideo,
     title: "GOLFER ENGAGEMENT",
-    desc: "Every golfer gets 3 AI-processed video clips of their shot. They share on social media — free marketing for your course.",
+    desc: "Every golfer gets 4 AI-processed video clips of their shot. They share on social media — free marketing for your course.",
   },
   {
     icon: FaCog,
@@ -25,7 +25,7 @@ const FEATURES = [
 
 export default function WhyPartners() {
   return (
-    <section className="relative w-full bg-[#f3f4f6] py-16 md:py-24 px-4 sm:px-6 md:px-8">
+    <section className="relative w-full bg-[#f3f4f6] py-8 md:py-24 px-4 sm:px-6 md:px-8">
       <div className="mx-auto max-w-6xl">
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 mb-12">

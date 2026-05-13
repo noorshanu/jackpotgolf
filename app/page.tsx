@@ -17,11 +17,12 @@ export default function Home() {
         <Perfectshot />
      
         <Precesion />
-        <Contest />
         <YourShot />
+        <Contest />
+        
         {/* <MasterApproch /> */}
         <GolfLove />
-        <Membership />
+        {/* <Membership /> */}
       </main>
     </>
   );

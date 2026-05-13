@@ -42,18 +42,17 @@ export default function DemoCourse() {
   return (
     <section
       id="schedule-demo"
-      className="relative w-full bg-[#f3f4f6] py-16 md:py-24 px-4 sm:px-6 md:px-8 overflow-hidden"
+      className="relative w-full bg-[#f3f4f6] py-8 md:py-24 px-4 sm:px-6 md:px-8 overflow-hidden"
     >
       {/* Decorative background blurs */}
       <div className="relative mx-auto max-w-3xl">
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 mb-12">  
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-black uppercase leading-tight">
-            SCHEDULE YOUR DEMO
+            SCHEDULE A DEMO
           </h2>
           <p className="text-base sm:text-lg font-medium text-gray-500 max-w-xl leading-relaxed">
-            Tell us about your course. We&apos;ll reach out within 24 hours to
-            schedule a site survey.
+            Tell us about your course. We&apos;ll reach out within 24 to 48 hours.
           </p>
         </div>
 
@@ -178,8 +177,8 @@ export default function DemoCourse() {
 
             {/* Footer Note */}
                 <p className="text-center text-sm sm:text-base text-gray-500 font-medium leading-relaxed">
-              No commitment required. We&apos;ll reach out to discuss your
-              course and answer any questions.
+                No commitment required. We&apos;ll reach out to discuss your
+                course and answer any questions within 24-48 hours.
             </p>
           </form>
         </div>

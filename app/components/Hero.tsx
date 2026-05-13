@@ -94,17 +94,17 @@ export default function Hero() {
         <div className="flex flex-wrap justify-start items-center gap-x-2 gap-y-1 text-[8.5px] sm:text-[11px] font-bold text-gray-500 uppercase tracking-widest">
               <div className="flex items-center gap-1 whitespace-nowrap">
                 <FaRegCheckCircle className="text-[#4fad11] text-[22px]" />
-                <span className="text-[12px]">AI-Verified</span>
+                <span className="text-[11px]">AI-Verified</span>
               </div>
               <div className="flex items-center gap-1 whitespace-nowrap">
                 <FaVideo className="text-[#4fad11] text-[22px]" />
-                <span className="text-[12px]">Video Proof</span>
+                <span className="text-[11px]">Video Proof</span>
               </div>
               <div className="flex items-center gap-1 whitespace-nowrap">
                 <div className="flex items-center justify-center rounded-full border-[1.5px] border-[#4fad11] h-[21px] w-[21px] text-[#4fad11]">
                   <FaDollarSign className="text-[18px]" />
                 </div>
-                <span className="text-[12px]">Instant pay</span>
+                <span className="text-[11px]">Fast Payouts</span>
               </div>
             </div>
 

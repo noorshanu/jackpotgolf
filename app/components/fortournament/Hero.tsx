@@ -61,7 +61,7 @@ export default function Hero() {
 
           {/* Main Headlines */}
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-xl uppercase leading-[1.1]">
-            STOP PAYING <span className="text-[#E63946]">$500</span> FOR HIO INSURANCE
+            STOP PAYING  FOR HIO INSURANCE
           </h1>
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#FCE154] drop-shadow-xl uppercase leading-[1.1]">
             START EARNING REVENUE INSTEAD
@@ -99,7 +99,7 @@ export default function Hero() {
               TRADITIONAL
             </h3>
             <p className="mt-3 text-base sm:text-lg font-medium text-white">
-              You <span className="font-extrabold text-[#E63946]">PAY</span> $150-$500+
+              You <span className="font-extrabold text-[#E63946]">PAY</span> $500+
             </p>
             <p className="mt-1 text-sm sm:text-base font-medium text-white/60">
               Per event for HIO insurance
@@ -130,7 +130,7 @@ export default function Hero() {
           <Link
             href="#download"
             className="flex w-full items-center justify-center rounded-xl bg-[#1a3508] px-8 py-5 text-xl font-extrabold tracking-wide text-[#ffffff] shadow-lg transition-transform hover:scale-105 active:scale-95"
-          >ENTER CONTEST
+          >SCHEDULE A DEMO
           </Link>
         </div>
         </div>

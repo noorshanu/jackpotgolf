@@ -69,8 +69,8 @@ export default function Hero() {
 
           {/* Description */}
           <p className="mt-4 text-base sm:text-lg md:text-xl font-medium text-white/80 drop-shadow-md max-w-xl leading-relaxed">
-            Zero cost installation. Zero staff time. Our patent pending
-            AI-powered skills contests your golfers will love.
+            Zero cost installation. Zero staff time. Your golfers will love our 
+            AI-powered skills contests.
           </p>
         </div>
 
@@ -118,19 +118,19 @@ export default function Hero() {
             <div className="flex items-center gap-2 whitespace-nowrap">
               <FaRegCheckCircle className="text-[#4fad11] text-xl" />
               <span className="text-sm sm:text-base font-medium text-white/80">
-                No upfront cost
+                No upfront costs
               </span>
             </div>
             <div className="flex items-center gap-2 whitespace-nowrap">
               <FaRegCheckCircle className="text-[#4fad11] text-xl" />
               <span className="text-sm sm:text-base font-medium text-white/80">
-                Revenue from day one
+              Doesn&apos;t slow gameplay
               </span>
             </div>
             <div className="flex items-center gap-2 whitespace-nowrap">
               <FaRegCheckCircle className="text-[#4fad11] text-xl" />
               <span className="text-sm sm:text-base font-medium text-white/80">
-                Patent pending AI
+               Passive revenue
               </span>
             </div>
           </div>

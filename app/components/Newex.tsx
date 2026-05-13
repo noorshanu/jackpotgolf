@@ -108,7 +108,7 @@ export default function Newex() {
                 WIN
               </h3>
             <p className="text-lg sm:text-xl font-medium leading-relaxed text-white/90 drop-shadow-sm">
-              Get a cinematic 3-clip video of your shot with Blue Comet tracer. Check the leaderboard. Win up to $1,000,000 for a hole-in-one.
+              Get a cinematic 4-clip video of your shot with Blue Comet tracer. Check the leaderboard. Win up to $1,000,000 for a hole-in-one.
             </p>
             </div>
            

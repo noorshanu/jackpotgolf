@@ -15,8 +15,8 @@ const Courses = () => {
     <WhyPartners />
     <RevenueCalculator />
     <HowInstallWork />
-    <Oppurcunity />
-    <IdealPartners />
+    {/* <Oppurcunity /> */}
+    {/* <IdealPartners /> */}
     <DemoCourse />
     </>
   )

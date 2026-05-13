@@ -23,6 +23,13 @@ const CLIPS = [
     desc: "Ball approaching and landing on the green from the pin camera.",
     video: "/images/shot5.mp4",
     stats: { speed: "155 MPH", carry: "158 YDS", height: "92 FT" }
+  },
+  {
+    id: 3,
+    title: "CLIP 4: SWING ANALYSIS",
+    desc: "Slow-motion AI breakdown of your swing mechanics, tempo, and impact.",
+    video: "/images/shot2.mp4",
+    stats: { speed: "165 MPH", carry: "160 YDS", height: "95 FT" }
   }
 ];
 
@@ -36,11 +43,11 @@ export default function YourShot() {
         {/* Header Text */}
         <div className="flex flex-col items-center text-center mt-2">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-[#1A2026] uppercase">
-            CINEMATIC GOLF SHOTS
+           Your Shot Highlights
           </h2>
-          <p className="text-lg sm:text-xl font-medium mt-4 text-gray-500 max-w-2xl leading-relaxed">
-            Every shot gets the tracer treatment — a cinematic 3D video showing your ball flight with real-time metrics.
-          </p>
+          {/* <p className="text-lg sm:text-xl font-medium mt-4 text-gray-500 max-w-2xl leading-relaxed">
+            Every shot gets the tracer treatment — signature golf moments  showing your ball flight with real-time metrics.
+          </p> */}
         </div>
 
         {/* Main Video Box */}
@@ -80,7 +87,7 @@ export default function YourShot() {
         </div>
 
         {/* Clip Selection Buttons */}
-        <div className="grid grid-cols-3 sm:grid-cols-3 gap-4 sm:gap-6 w-full">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 w-full">
           {CLIPS.map((clip, idx) => (
             <button
               key={clip.id}

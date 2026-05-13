@@ -19,7 +19,7 @@ export default function RevenueCalculator() {
     `$${value.toLocaleString("en-US")}`;
 
   return (
-    <section className="relative w-full bg-[#f3f4f6] py-16 md:py-24 px-4 sm:px-6 md:px-8">
+    <section className="relative w-full bg-[#f3f4f6] py-8 md:py-24 px-4 sm:px-6 md:px-8">
       <div className="mx-auto max-w-3xl flex flex-col items-center">
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 mb-12">
@@ -28,7 +28,7 @@ export default function RevenueCalculator() {
           </h2>
           <p className="text-base sm:text-lg font-medium text-gray-600 max-w-xl leading-relaxed">
             Drag the sliders to see your projected monthly earnings from Hole
-            in One Jackpot.
+            in One Contest.
           </p>
         </div>
 

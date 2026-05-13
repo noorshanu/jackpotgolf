@@ -40,11 +40,11 @@ export default function GetInTouch() {
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 mb-12">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-black₹ uppercase leading-tight">
-            GET IN TOUCH
+         Schedule a Demo
           </h2>
           <p className="text-base sm:text-lg font-medium text-gray-500 max-w-xl leading-relaxed">
             Fill out the form below and our team will reach out to discuss how
-            your tournament can earn revenue instead of paying for hole-in-one
+            your course can earn revenue instead of paying for hole-in-one
             insurance.
           </p>
         </div>
@@ -154,7 +154,7 @@ export default function GetInTouch() {
               type="submit"
               className="mt-2 w-full rounded-xl bg-[#1a3508] px-8 py-5 text-lg sm:text-xl font-extrabold uppercase tracking-wide text-white shadow-[0_8px_24px_-8px_rgba(79,173,17,0.6)] transition-all duration-200 hover:shadow-[0_12px_32px_-8px_rgba(79,173,17,0.8)] hover:scale-[1.02] active:scale-[0.98]"
             >
-              GET IN TOUCH
+              SCHEDULE A DEMO
             </button>
           </form>
         </div>
@@ -162,9 +162,10 @@ export default function GetInTouch() {
         {/* Footer Note */}
         <div className="mt-8 text-center">
           <p className="text-sm sm:text-base text-gray-500 font-medium leading-relaxed">
-            No commitment required. Our team will reach out within 24 hours.
+          No commitment required. We&apos;ll reach out to discuss your
+          course and answer any questions within 24-48 hours.
           </p>
-          <p className="mt-1 text-sm sm:text-base text-gray-500 font-medium">
+          {/* <p className="mt-1 text-sm sm:text-base text-gray-500 font-medium">
             Or email us directly at{" "}
             <a
               href="mailto:support@holeinone-jackpot.com"
@@ -172,7 +173,7 @@ export default function GetInTouch() {
             >
               support@holeinone-jackpot.com
             </a>
-          </p>
+          </p> */}
         </div>
       </div>
     </section>

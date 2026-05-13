@@ -5,7 +5,7 @@ import { GiGolfFlag } from 'react-icons/gi';
 
 export default function Contest() {
   return (
-    <section className="relative flex w-full flex-col items-center justify-start bg-white py-12 md:py-20" id="contest">
+    <section className="relative flex w-full flex-col items-center justify-start bg-white py-4 md:py-20" id="contest">
       <div className="flex w-full flex-col items-center gap-10 px-4 sm:px-6 md:px-8 lg:max-w-6xl">
         
         {/* Header Text */}
@@ -73,7 +73,7 @@ export default function Contest() {
                 + $5 Add-On
               </div>
               <h4 className="text-2xl sm:text-3xl font-extrabold text-[#1A2026] uppercase tracking-tight mb-4">
-                Closest-To-Pin 50/50
+                Closest-To-Pin Daily 50/50
               </h4>
               <p className="text-gray-600 text-lg font-medium leading-relaxed mb-8">
                 Add $5 when you enter and compete for the daily closest-to-pin pool at your course. AI measures your distance to sub-inch accuracy. Closest golfer splits the pot 50/50 with the course. Resets at midnight.

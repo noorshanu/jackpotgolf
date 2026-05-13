@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { FaArrowDown } from "react-icons/fa";
 
-const TRADITIONAL_COST = 350;
+const TRADITIONAL_COST = 500;
 const ORGANIZER_REVENUE_SHARE = 0.075;
 
 export default function RevenueCalculator() {

@@ -18,10 +18,9 @@ export default function Insurance() {
             <p className="mt-6 text-base sm:text-lg md:text-xl font-medium text-gray-600 leading-relaxed max-w-2xl">
               Golf tournament organizers currently pay{" "}
               <span className="font-bold text-[#E63946]">
-                $150-$500+ per event
+                $500+ per event
               </span>{" "}
-              for hole-in-one insurance from companies like American Hole &apos;n
-              One and Odds On Promotions. You pay out of pocket. Your golfers
+              for hole-in-one insurance. You pay out of pocket. Your golfers
               get nothing extra. And if nobody aces it, that money is gone.
             </p>
 
