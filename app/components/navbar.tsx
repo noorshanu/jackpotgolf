@@ -11,7 +11,7 @@ const navLinks = [
   { href: "/", label: "For Golfers" },
   { href: "/courses", label: "For Courses" },
   { href: "/for-tournament", label: "For Tournaments" },
-  { href: "#find-course", label: "Find a Course" },
+  { href: "/find-courses", label: "Find a Course" },
   { href: "/about-us", label: "About Us" },
   { href: "#login", label: "Login" },
 ];

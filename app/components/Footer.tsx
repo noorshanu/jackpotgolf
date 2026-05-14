@@ -42,7 +42,7 @@ export default function Footer() {
             <Link href="/" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">For Golfers</Link>
             <Link href="/courses" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">For Courses</Link>
             <Link href="/for-tournament" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">For Tournaments</Link>
-            <Link href="#find-course" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">Find a Course</Link>
+            <Link href="/find-courses" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">Find a Course</Link>
             <Link href="/about-us" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">About Us</Link>
             <Link href="#login" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">Login</Link>
           </div>
