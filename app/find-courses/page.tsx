@@ -1,11 +1,5 @@
-import React from 'react'
+import FindCoursesRoot from "./FindCoursesRoot";
 
-const FindCourses = () => {
-  return (
-    <div>
-        <h1>Find Courses</h1>
-    </div>
-  )
+export default function FindCourses() {
+  return <FindCoursesRoot />;
 }
-
-export default FindCourses
