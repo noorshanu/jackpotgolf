@@ -21,10 +21,10 @@ const INITIAL_STATE: FormState = {
 };
 
 const FIELD_CLASS =
-  "w-full rounded-xl bg-white border border-gray-200 px-5 py-4 text-base text-gray-500 placeholder:text-gray-500 outline-none transition-all duration-200 focus:border-gray-300 focus:bg-white/10 focus:ring-2 focus:ring-gray-300";
+  "w-full rounded-xl bg-white/5 border border-[#4fad11]/30 px-5 py-4 text-base text-white placeholder:text-white/40 outline-none transition-all duration-200 focus:border-[#a3e635] focus:bg-white/10 focus:ring-2 focus:ring-[#4fad11]/30";
 
 const LABEL_CLASS =
-  "text-xs sm:text-sm font-bold tracking-[0.2em] text-gray-500 uppercase";
+  "text-xs sm:text-sm font-bold tracking-[0.2em]  uppercase text-[#a3e635]";
 
 export default function DemoCourse() {
   const [form, setForm] = useState<FormState>(INITIAL_STATE);
@@ -176,7 +176,7 @@ export default function DemoCourse() {
             </button>
 
             {/* Footer Note */}
-                <p className="text-center text-sm sm:text-base text-gray-500 font-medium leading-relaxed">
+                <p className="text-center text-sm sm:text-base text-gray-100 font-medium leading-relaxed">
                 No commitment required. We&apos;ll reach out to discuss your
                 course and answer any questions within 24-48 hours.
             </p>
