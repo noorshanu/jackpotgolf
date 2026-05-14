@@ -39,11 +39,11 @@ export default function Footer() {
           {/* Column 1: Main Nav Items */}
           <div className="flex flex-col items-center sm:items-start gap-5 sm:gap-6">
             <h3 className="text-base sm:text-lg font-bold uppercase tracking-wider">EXPLORE</h3>
-            <Link href="#for-golfers" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">For Golfers</Link>
-            <Link href="#for-courses" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">For Courses</Link>
-            <Link href="#for-tournaments" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">For Tournaments</Link>
+            <Link href="/" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">For Golfers</Link>
+            <Link href="/courses" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">For Courses</Link>
+            <Link href="/for-tournament" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">For Tournaments</Link>
             <Link href="#find-course" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">Find a Course</Link>
-            <Link href="#about-us" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">About Us</Link>
+            <Link href="/about-us" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">About Us</Link>
             <Link href="#login" className="text-base sm:text-lg font-medium hover:text-white/80 transition-colors">Login</Link>
           </div>
 
