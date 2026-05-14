@@ -57,7 +57,7 @@ export default function DemoCourse() {
         </div>
 
         {/* Form Card */}
-        <div className="relative w-full rounded-4xl bg-white p-6 sm:p-10 ring-1 ring-gray-100 shadow-2xl">
+        <div className="relative w-full rounded-4xl bg-linear-to-br from-[#1a3508] via-[#22550a] to-[#0f2008] backdrop-blur-sm p-6 sm:p-10 ring-1 ring-[#4fad11]/30 shadow-2xl">
           <form
             onSubmit={handleSubmit}
             className="flex flex-col gap-6"
