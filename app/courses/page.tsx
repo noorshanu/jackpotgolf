@@ -4,12 +4,12 @@ import Newex from '../components/courses/Newex'
 import WhyPartners from '../components/courses/WhyPartners'
 import RevenueCalculator from '../components/courses/RevenueCalculator'
 import HowInstallWork from '../components/courses/HowInstallWork'
-import Oppurcunity from '../components/courses/Oppurcunity'
-import IdealPartners from '../components/courses/IdealPartners'
+
 import DemoCourse from '../components/courses/DemoCourse'
 const Courses = () => {
   return (
     <>
+    
     <Hero />
     <Newex />
     <WhyPartners />
